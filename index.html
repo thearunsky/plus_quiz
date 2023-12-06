@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @media screen and (max-width : 640px) {
+            .content {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="flex justify-center bg-black">
+    <div class="content p-1 border border-black w-full lg:w-6/12 bg-white">
+        <div class="border border-black p-2 bg-black text-white shadow-2xl">
+            <h1 class="text-center font-bold text-4xl my-5">Infinite Quiz App</h1>
+
+            <div class="flex justify-between my-3">
+                <p class="text-2xl">Question <span id="questionNumber"></span></p>
+                <p class="text-2xl">Score : <span id="score"></span></p>
+            </div>
+        </div>
+        <div class=" p-2">
+            <h1 class="font-black text-3xl my-5">What is <span id="question"></span> ?</h1>
+
+            <div class="text-2xl">
+                <label class="block boder border-black shadow-xl px-2 py-5 my-2 hover:cursor-pointer hover:bg-black hover:text-white"
+                    for="q1"><input value="1" type="radio" name="selector" id="q1"> <span class="choice"></span>
+                </label>
+                <label class="block boder border-black shadow-xl px-2 py-5 my-2 hover:cursor-pointer hover:bg-black hover:text-white"
+                    for="q2"><input value="2" type="radio" name="selector" id="q2"> <span class="choice"></span>
+                </label>
+                <label class="block boder border-black shadow-xl px-2 py-5 my-2 hover:cursor-pointer hover:bg-black hover:text-white"
+                    for="q3"><input value="3" type="radio" name="selector" id="q3"> <span class="choice"></span>
+                </label>
+                <label class="block boder border-black shadow-xl px-2 py-5 my-2 hover:cursor-pointer hover:bg-black hover:text-white"
+                    for="q4"><input value="4" type="radio" name="selector" id="q4"> <span class="choice"></span>
+                </label>
+
+                <div class="text-center mt-12">
+                    <button onclick="next()"
+                        class="hover:cursor-pointer bg-black text-white px-8 py-3 text-center hover:bg-white hover:text-black border hover:border-black">Next</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
